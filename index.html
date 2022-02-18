@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<meta http-equiv="refresh" content="600">
+<style>
+  .tabcontent { display: none; }
+  .tabcontent.active { display: block; }
+  .tablinks.active { cursor: allowed; }
+
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+<div class="tab">
+  <button class="tablinks active" onclick="openNews(event, ' Dernières Nouvelles')">Dernières Nouvelles</button>
+  <button class="tablinks" onclick="openNews(event, 'Politique')">Politique</button>
+  <button class="tablinks" onclick="openNews(event, 'Economie')">Economie</button>
+  <button class="tablinks" onclick="openNews(event, 'Sécurité & Justice')">Sécurité & Justice</button>
+  <button class="tablinks" onclick="openNews(event, 'Corona')">Corona</button>
+
+</div>
+<style>
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 0px solid #ccc;
+  background-color: #00000000;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 22px;
+  
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #00000000;
+  color: #222222;
+
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #00000000;
+  text-decoration: underline #eb2026;
+  }
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 0px solid #ccc;
+  border-top: none;
+}
+ 
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color: #0000000;
+  color: red;
+}
+
+.previous {
+  background-color: #0000000;
+  color: black;
+}
+
+.round {
+  border-radius: 20%;
+  }
+</style>
+
+<tbody>
+<tr>
+  <a id='back' href='javascript:void();' onclick="self.history.back(-1)"  class="previous round">&#8249;</a>
+</tr>
+</tbody>
+
+</table>
+<div style="overflow-x: auto; overflow-y: auto;">
+<tbody>
+<div id="Dernières Nouvelles" class="tabcontent active">    
+ <div class = "tab-1-content"> <iframe scrolling="auto"  src="https://www.nnaleb.com/fr/latest/" style="border: 0px none; margin-left: -5px; height: 2000px; margin-top: -245px; width: 100%; "> </iframe></div>
+</div>
+
+<div id="Politique" class="tabcontent">
+  <div class = "tab-2-content"> <iframe scrolling="auto" src="https://www.nnaleb.com/fr/latest/filter?keyword=&category=1&datefrom=&dateto=" style="border: 0px none; margin-left: -5px; height: 2000px; margin-top: -245px; width: 100%;"> </iframe></div>
+</div> 
+
+<div id="Economie" class="tabcontent">
+  <div class = "tab-3-content"> <iframe scrolling="auto" src="https://www.nnaleb.com/fr/latest/filter?keyword=&category=3&datefrom=&dateto=" style="border: 0px none; margin-left: -5px; height: 2000px; margin-top: -245px; width: 100%; "> </iframe></div>
+</div> 
+
+<div id="Sécurité & Justice" class="tabcontent">
+<div class = "tab-4-content"> <iframe scrolling="auto" src="https://www.nnaleb.com/fr/latest/filter?keyword=&category=2&datefrom=&dateto=" style="border: 0px none; margin-left: -5px; height: 2000px; margin-top: -245px; width: 100%;"> </iframe></div>
+</div> 
+<div id="Corona" class="tabcontent">
+<div class = "tab-5-content"> <iframe scrolling="auto" src="https://www.nnaleb.com/fr/latest/filter?keyword=&category=13&datefrom=&dateto=" style="border: 0px none; margin-left: -5px; height: 2000px; margin-top: -245px; width: 100%;"> </iframe></div>
+</div>
+<script>
+
+function openNews(evt, NewsName) {
+
+  var tabcontent = document.getElementsByClassName("tabcontent");
+  for (var i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].classList.remove("active");
+  }
+
+  var tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].classList.remove("active");
+  }
+
+  evt.currentTarget.classList.add("active");
+  document.getElementById(NewsName).classList.add("active");
+} 
+</script>
+   
+</body>
+</html>
