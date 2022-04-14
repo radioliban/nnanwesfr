@@ -13,6 +13,7 @@
 
 <div class="tab">
   <button class="tablinks active" onclick="openNews(event, 'Dernières Nouvelles')">Dernières Nouvelles</button>
+ <button class="tablinks" onclick="openNews(event, 'Élections Parlementaires')">Élections Parlementaires</button>
   <button class="tablinks" onclick="openNews(event, 'Politique')">Politique</button>
   <button class="tablinks" onclick="openNews(event, 'Economie')">Economie</button>
   <button class="tablinks" onclick="openNews(event, 'Sécurité & Justice')">Sécurité & Justice</button>
@@ -97,19 +98,22 @@ a:hover {
  <div class = "tab-1-content"> <iframe scrolling="auto"  src="https://www.nnaleb.com/fr/latest/" style="border: 0px none; margin-left: -5px; height: 2000px; margin-top: -140px; width: 100%; "> </iframe></div>
 </div>
 
+<div id="Élections Parlementaires" class="tabcontent">
+ <div class = "tab-2-content"> <iframe scrolling="auto" src="https://www.nnaleb.com/fr/latest/filter?keyword=&category=18&datefrom=&dateto=" style="border: 0px none; margin-left: -5px; height: 2000px; margin-top: -140px; width: 100%;"> </iframe></div>
+</div> 
 <div id="Politique" class="tabcontent">
-  <div class = "tab-2-content"> <iframe scrolling="auto" src="https://www.nnaleb.com/fr/latest/filter?keyword=&category=1&datefrom=&dateto=" style="border: 0px none; margin-left: -5px; height: 2000px; margin-top: -140px; width: 100%;"> </iframe></div>
+  <div class = "tab-3-content"> <iframe scrolling="auto" src="https://www.nnaleb.com/fr/latest/filter?keyword=&category=1&datefrom=&dateto=" style="border: 0px none; margin-left: -5px; height: 2000px; margin-top: -140px; width: 100%;"> </iframe></div>
 </div> 
 
 <div id="Economie" class="tabcontent">
-  <div class = "tab-3-content"> <iframe scrolling="auto" src="https://www.nnaleb.com/fr/latest/filter?keyword=&category=3&datefrom=&dateto=" style="border: 0px none; margin-left: -5px; height: 2000px; margin-top: -140px; width: 100%; "> </iframe></div>
+  <div class = "tab-4-content"> <iframe scrolling="auto" src="https://www.nnaleb.com/fr/latest/filter?keyword=&category=3&datefrom=&dateto=" style="border: 0px none; margin-left: -5px; height: 2000px; margin-top: -140px; width: 100%; "> </iframe></div>
 </div> 
 
 <div id="Sécurité & Justice" class="tabcontent">
-<div class = "tab-4-content"> <iframe scrolling="auto" src="https://www.nnaleb.com/fr/latest/filter?keyword=&category=2&datefrom=&dateto=" style="border: 0px none; margin-left: -5px; height: 2000px; margin-top: -140px; width: 100%;"> </iframe></div>
+<div class = "tab-5-content"> <iframe scrolling="auto" src="https://www.nnaleb.com/fr/latest/filter?keyword=&category=2&datefrom=&dateto=" style="border: 0px none; margin-left: -5px; height: 2000px; margin-top: -140px; width: 100%;"> </iframe></div>
 </div> 
 <div id="Corona" class="tabcontent">
-<div class = "tab-5-content"> <iframe scrolling="auto" src="https://www.nnaleb.com/fr/latest/filter?keyword=&category=13&datefrom=&dateto=" style="border: 0px none; margin-left: -5px; height: 2000px; margin-top: -140px; width: 100%;"> </iframe></div>
+<div class = "tab-6-content"> <iframe scrolling="auto" src="https://www.nnaleb.com/fr/latest/filter?keyword=&category=13&datefrom=&dateto=" style="border: 0px none; margin-left: -5px; height: 2000px; margin-top: -140px; width: 100%;"> </iframe></div>
 </div>
 <script>
 
